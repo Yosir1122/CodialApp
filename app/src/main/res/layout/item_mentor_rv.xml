@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:text="Ilhomjon"/>
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/name"
+        android:layout_centerVertical="true"
+        android:text="Ibragimob"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:padding="9dp"
+        android:id="@+id/delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/trash"
+        android:layout_alignParentEnd="true"
+        android:background="#1A4E79"/>
+
+    <ImageView
+        android:layout_toStartOf="@id/delete"
+        android:id="@+id/edit"
+        android:layout_width="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pen"
+        android:padding="8dp"
+        android:background="#FFB800"/>
+
+</RelativeLayout>

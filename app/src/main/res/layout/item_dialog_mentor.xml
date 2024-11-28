@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2DFDF"
+        android:hint="Familiya"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="15dp"
+        android:background="#E2DFDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ismi"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/otasiniIsmi"
+        android:layout_marginTop="15dp"
+        android:background="#E2DFDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Otasini ismi"
+        android:padding="15dp"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qo'shish"
+            android:textColor="#FFB800"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yopish"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/add"
+            android:layout_marginEnd="16dp"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

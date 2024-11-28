@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragment.guruhlar.StudentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="#FFB800">
+        <ImageView
+            android:id="@+id/chiqish"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/qaytish"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android 1"
+            android:layout_toEndOf="@id/chiqish"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/add"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android 1"
+            android:textSize="20sp"
+            android:textColor="#3F51B5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O'quvchilar soni: "
+                android:textSize="20dp"
+                android:textColor="#3F51B5"/>
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="#3F51B5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ta"
+                android:textSize="20dp"
+                android:textColor="#3F51B5"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaqti:"
+                android:textSize="20dp"
+                android:textColor="#3F51B5"/>
+            <TextView
+                android:id="@+id/vaqti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00 dan 18:00 gacha"
+                android:textSize="20dp"
+                android:textColor="#3F51B5"/>
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_boshlash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="5dp"
+            android:elevation="3dp"
+            android:backgroundTint="#FFB800"
+            android:text="Darslarni boshlash"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barcha o'quvchilar ro'yxati"
+            android:textSize="15dp"
+            android:textColor="#3F51B5"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
